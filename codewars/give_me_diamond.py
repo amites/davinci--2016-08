@@ -10,3 +10,14 @@ def diamond(n):
         diamond_list.insert(0, row)
         diamond_list.append(row)
     return '\n'.join(diamond_list) + '\n'
+
+
+def test_diamond():
+    diamond_string = diamond(3)
+    correct_answer = ''.join([' *\n', '***\n', ' *\n'])
+    if diamond_string != correct_answer:
+        print 'diamond is broken'
+        print 'diamond returned:'
+        print diamond_string
+        print 'diamond should have returned:'
+        print correct_answer
