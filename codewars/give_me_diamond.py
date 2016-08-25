@@ -1,5 +1,9 @@
-# http://www.codewars.com/kata/5503013e34137eeeaa001648/train/python
+#!/usr/bin/python
 
+"""
+Solution to
+    http://www.codewars.com/kata/5503013e34137eeeaa001648/train/python
+"""
 
 def diamond(n):
     if n < 1 or n % 2 == 0:
